@@ -51,6 +51,11 @@ app.get('/bad', (req, res) => {
 	res.send('<h1>Bad Request</h1>');
 });
 
+app.get('/projects', (req, res) => {
+	res.render('projects.hbs', {
+		title: "Projects"
+	});
+});
 
 app.listen(port, '0.0.0.0', () => {
 	console.log(`listening to port ${port}`);
