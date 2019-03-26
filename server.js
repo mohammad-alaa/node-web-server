@@ -53,6 +53,12 @@ app.get('/aboutus', (req, res) => {
 	});
 });
 
+app.get('/ourteam', (req, res) => {
+	res.render('about.hbs', {
+		title: 'About'
+	});
+});
+
 app.get('/bad', (req, res) => {
 	res.send('<h1>Bad Request</h1>');
 });
